@@ -2,10 +2,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-interface Reviewable {
-    void review();
-}
-
 abstract class Book {
     protected String title;
     protected String author;
@@ -62,7 +58,7 @@ class ComicBook extends Book implements Reviewable {
     public void displayInfo() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
-        System.out.println("Price: Rp. " + price);
+        System.out.println("Price: $" + price);
         System.out.println("Artist: " + artist);
         System.out.println("Stock: " + stock);
     }
@@ -71,6 +67,10 @@ class ComicBook extends Book implements Reviewable {
     public void review() {
         System.out.println("Reviewing comic book: " + title);
     }
+}
+
+interface Reviewable {
+    void review();
 }
 
 public class BookStore {
@@ -113,7 +113,7 @@ public class BookStore {
             scanner.nextLine(); // Consume newline
             if (book instanceof ComicBook) {
                 System.out.print("New Artist: ");
-                ((ComicBook) book).setArtist(scanner.nextLine()); // Use setter method
+                ((ComicBook) book).setArtist(scanner.nextLine());
             }
             System.out.println("Book updated successfully!");
         } else {

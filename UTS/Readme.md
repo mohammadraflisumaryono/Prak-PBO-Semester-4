@@ -38,12 +38,6 @@ Aplikasi ini menyediakan berbagai fitur untuk membantu pemilik toko buku dalam m
 - **Encapsulation:** Atribut-atribut dalam kelas dienkapsulasi sebagai `private`, hanya dapat diakses melalui metode-metode publik.
 - **Inheritance:** Kelas `ComicBook` mewarisi atribut dan metode dari kelas `Book`, dengan tambahan fitur spesifik hanya untuk komik.
 - **Polymorphism:** Terjadi melalui overriding metode `displayInfo()` dalam kelas `ComicBook`, dan dalam penggunaan polimorfisme objek dalam kelas `BookStore`.
-- **Interface atau Abstract:** Meskipun tidak digunakan secara langsung, konsep ini bisa dimasukkan untuk memperluas fungsionalitas di masa mendatang.
-
-### Keunggulan Aplikasi:
-
-- User-friendly interface dengan antarmuka yang sederhana dan mudah digunakan.
-- Fitur lengkap untuk manajemen inventaris dan penjualan buku.
-- Kemudahan pemeliharaan dan penambahan fitur-fitur baru di masa mendatang.
+- **Interface atau Abstract:** Kelas abstrak `Book` menyediakan struktur dasar untuk semua jenis buku, memastikan konsistensi dalam atribut dan metode antar jenis buku.
 
 ---
