@@ -62,7 +62,7 @@ class ComicBook extends Book implements Reviewable {
     public void displayInfo() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
-        System.out.println("Price: $" + price);
+        System.out.println("Price: Rp. " + price);
         System.out.println("Artist: " + artist);
         System.out.println("Stock: " + stock);
     }
